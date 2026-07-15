@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="lamp"></div>
+
+    <header>
+        <nav class="wrap">
+            <div class="logo">Fujianto<span>.</span>dev</div>
+            <a href="/" class="nav-cta">Kembali →</a>
+            <button class="burger" id="burgerBtn" aria-label="Buka menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="tentang">
+        <div class="wrap">
+
+            <!-- Gambar 1 -->
+            <div class="content-box">
+                <div class="image-box">
+                    <img src="img/pendaftaranMahasiswa/dasboardAwal.png" alt="Dashboard">
+                </div>
+
+                <div class="text-box">
+                    <p class="eyebrow">Halaman Utama Website</p>
+                    <p>
+                        Halaman dashboard menampilkan identitas University Mandalika,
+                        pesan sambutan kepada admin, serta tombol "Mulai Pendaftaran"
+                        untuk mengakses proses pendaftaran mahasiswa baru.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gambar 2 -->
+            <div class="content-box">
+                <div class="image-box">
+                    <img src="img/pendaftaranMahasiswa/formpendaftaranMahasiswa.png" alt="Form Pendaftaran">
+                </div>
+
+                <div class="text-box">
+                    <p class="eyebrow">Halaman Form Pendaftaran</p>
+                    <p>
+                        Halaman ini digunakan untuk menginput data calon mahasiswa
+                        seperti identitas pribadi, program studi, dan informasi lainnya.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gambar 3 -->
+            <div class="content-box">
+                <div class="image-box">
+                    <img src="img/pendaftaranMahasiswa/pembayaranUser.png" alt="Data Mahasiswa">
+                </div>
+
+                <div class="text-box">
+                    <p class="eyebrow">Halaman Pembayaran</p>
+                    <p>Halaman Konfirmasi Pembayaran menampilkan formulir untuk mengunggah bukti transfer sebagai
+                        konfirmasi pembayaran biaya pendaftaran. Pengguna diminta mengisi informasi seperti nama, nomor
+                        telepon, jumlah dan tanggal pembayaran, serta mengunggah bukti transfer yang kemudian
+                        ditampilkan dalam pratinjau. Di sisi kanan terdapat ringkasan pembayaran yang berisi total
+                        biaya, informasi rekening tujuan, serta catatan penting mengenai proses verifikasi pembayaran
+                        sehingga pengguna dapat memastikan pembayaran telah dilakukan dengan benar.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gambar 4 -->
+            <div class="content-box">
+                <div class="image-box">
+                    <img src="img/pendaftaranMahasiswa/StatusPendaftaranUser.png" alt="Data Mahasiswa">
+                </div>
+
+                <div class="text-box">
+                    <p class="eyebrow">Halaman Status Pendaftaran</p>
+                    Menampilkan informasi mengenai perkembangan proses pendaftaran mahasiswa.
+                    Pada halaman ini terlihat bahwa status pendaftaran masih pending atau menunggu proses peninjauan,
+                    sedangkan status pembayaran masih belum ada transaksi. Selain itu, ditampilkan informasi singkat
+                    mengenai data pendaftar, seperti nama lengkap dan asal sekolah, beserta status verifikasi. Di bagian
+                    bawah terdapat riwayat pembayaran yang masih kosong karena belum ada pembayaran yang tercatat,
+                    sehingga pengguna dapat memantau status pendaftaran dan pembayaran secara mudah dalam satu halaman.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gambar 5 -->
+            <div class="content-box">
+                <div class="image-box">
+                    <img src="img/pendaftaranMahasiswa/statusPendaftaranBerhasil.png" alt="Data Mahasiswa">
+                </div>
+
+                <div class="text-box">
+                    <p class="eyebrow">Halaman Informasi Mahasiswa</p>
+                    <p>Menampilkan informasi mengenai perkembangan proses pendaftaran mahasiswa.
+                        Pada halaman ini terlihat bahwa status pendaftaran telah di verifikasi berhasil,
+                        sedangkan status pembayaran masih di pending karena harus di cek ulang lagi oleh pihak kampus.
+                        Selain itu, ditampilkan informasi singkat
+                        mengenai data pendaftar, seperti nama lengkap dan asal sekolah, beserta status verifikasi. Di
+                        bagian
+                        bawah terdapat riwayat pembayaran yang telah di bayar,
+                        sehingga pengguna dapat memantau status pendaftaran dan pembayaran secara mudah dalam satu
+                        halaman.
+                    </p>
+                </div>
+            </div>
+            <!-- Gambar 6 -->
+            <div class="content-box">
+                <div class="image-box">
+                    <img src="img/pendaftaranMahasiswa/dasbordAdm.png" alt="Data Mahasiswa">
+                </div>
+
+                <div class="text-box">
+                    <p class="eyebrow">Halaman Informasi Admin</p>
+                    <p>Halaman Dashboard Admin menampilkan ringkasan informasi utama yang memudahkan administrator dalam
+                        memantau proses penerimaan mahasiswa baru. Pada halaman ini terdapat tiga kartu informasi yang
+                        menunjukkan jumlah pendaftaran akun yang menunggu verifikasi, pendaftaran mahasiswa yang
+                        menunggu persetujuan, dan konfirmasi pembayaran yang menunggu verifikasi. Setiap kartu
+                        dilengkapi tombol "Lihat Detail" untuk mengakses informasi lebih lengkap. Selain itu, di sisi
+                        kiri tersedia menu navigasi seperti Dashboard, Pendaftaran Akun, Pendaftaran Mahasiswa,
+                        Pembayaran, dan Pengumuman, sedangkan di bagian atas terdapat informasi akun admin beserta
+                        tombol Logout untuk keluar dari sistem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="github-section" style="margin-top: -200px;">
+        <div class="wrap">
+            <div class="github-card">
+                <h2>Source Code</h2>
+                <p>
+                    Seluruh source code proyek Pendaftaran Mahasiswa dapat dilihat pada
+                    repository GitHub berikut.
+                </p>
+
+                <a href="https://github.com/fujianto12/LSP_pendaftaranMahasiswa.git" target="_blank" class="github-btn">
+                    🔗 Lihat Repository GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <footer class="wrap">
+        <div>© 2026 Fujianto. Dibuat dengan detail.</div>
+        <div class="foot-links">
+            <a href="https://www.instagram.com/fujii_011/">Instagram</a>
+            <a href="https://www.linkedin.com/in/fuji-anto-56a898252/">LinkedIn</a>
+            <a href="https://github.com/fujianto12">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
